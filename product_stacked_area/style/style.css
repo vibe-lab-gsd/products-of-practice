@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+h3 {
+  margin: 5px 0px;
+}
+
+p{
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+  color: white;
+}
+
+/* h2 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin:30px 50px;
+  font-size: 14pt;
+} */
+
+#container {
+  width: 100%;
+  height: 98vh;
+  display: grid;
+  grid-template-columns: 1.3fr 5fr;
+  grid-template-rows: 0.25fr 15fr 1.5fr;
+  grid-template-areas:
+        "slider_result spacer"
+        "stackedArea chart"
+        "stackedArea legend"
+}
+
+#stackedArea {
+  /* height: 90vh; */
+  grid-area: stackedArea;
+}
+
+#chart {
+  grid-area: chart;
+}
+
+#legend {
+  grid-area: legend;
+}
+
+
+#slider_result {
+  grid-area: slider_result;
+  padding: 10px 40px 0px 45px;
+  height: 8vh;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12pt;
+  color: white;
+}
+
+.axisLabel {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12pt;
+  color: white;
+}
+
+.axis {
+  font-size: 9pt;
+  color: white;
+}
+
+.legendLabel{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12pt;
+  text-transform: capitalize;
+  /* font-weight: bold; */
+
+}
+
+.track {
+  stroke-linecap: butt;
+  stroke: white;
+  stroke-width: 2;
+}
+
+.track-inset {
+  visibility: hidden;
+}
+
+.slider text {
+  opacity: 0;
+}
+
+.axis text {
+  opacity: 1;
+  font-size: 9pt;
+  fill: white;
+}
+
+.tick line {
+  opacity: 0;
+}
+
+.handle {
+  outline: none ! important;
+  stroke: white;
+  fill: black;
+}
+
+.tooltip {
+  position: absolute; 
+  /*in absolutely pixel positions relative to the container in which it is located*/
+  left: 30%;
+  top: 40%;
+  visibility: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 10pt;
+  width: 200px;
+  color: white;
+  background-color:black;
+  padding: 15px;
+  pointer-events: none; /*tells the browser to ignore interactions with the element*/
+  text-transform: capitalize;
+  border: 1px solid white;
+  display: grid;
+  grid-template-columns: 0.3fr 5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+        "colors tooltipText"
+}
+
+.stackLabels {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 10pt;
+  color: white;
+}
+
+
+.tooltipText {
+  grid-area: tooltipText;
+}
+
+.colors{
+  padding-top: 48px;
+}
+
+.uniqueDiv {
+  width: 5px;
+  height: 8px;
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+#abstract {
+  background-color: #99f5a0;
+}
+
+#academic_institutions {
+  background-color: #f16e45;
+}
+
+#building_code {
+  background-color: #07aade;
+}
+
+#by_master_builder {
+  background-color: #f0c80a;
+}
+
+#constructed_perspective {
+  background-color: #ffa4a3;
+}
+
+#data_structures {
+  background-color: #003d63;
+}
+
+#design_build {
+  background-color: #b59607;
+}
+
+#design_develop {
+  background-color: #756804;
+}
+
+#detail {
+  background-color: #de1c1f;
+}
+
+#diagram {
+  background-color: #f6b5f3;
+}
+
+#digital_twin {
+  background-color: #015900;
+}
+
+#discursive_monologue {
+  background-color: #322b83;
+}
+
+#formal_study {
+  background-color: #e3ffe9;
+}
+
+#guild_system {
+  background-color: #fa9a68;
+}
+
+#manifesto {
+  background-color: #8d9bcf;
+}
+
+#master_builder{
+  background-color: #f1bb93;
+}
+
+#monograph{
+  background-color: #4258ad;
+}
+
+#moving_image{
+  background-color: #ab1e7b;
+}
+
+#natural_language{
+  background-color: #04566a;
+}
+
+#not_producing_buildings{
+  background-color: #d9d9d9;
+}
+
+#orthographic_projection{
+  background-color: #f8d2d1;
+}
+
+#photograph{
+  background-color: #e200df;
+}
+
+#physical_mockup{
+  background-color: #009f1d;
+}
+
+#presentation{
+  background-color: #00e50e;
+}
+
+#professional_bodies{
+  background-color: #f33d0e;
+}
+
+#proportional_system{
+  background-color: #b8dfef;
+}
+
+#rendered_drawing{
+  background-color: #ef65ff;
+}
+
+#rendering{
+  background-color: #750071;
+}
+
+#self_built_structures{
+  background-color: #fae89c;
+}
+
+#specification{
+  background-color: #8d1115;
+}
+
+#technical_standard{
+  background-color: #6bcee7;
+}
+
+#treatise{
+  background-color: #d9dff1;
+}
+
+#zoning{
+  background-color: #0683a1;
+}
